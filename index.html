@@ -1,0 +1,79 @@
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="features.css">
+
+  <!-- Demo styles -->
+ </head>
+
+<body>
+  <!-- Swiper -->
+  <header class="header">
+    <div class="logo">
+        <a href="">
+            <img src="../imgs/logo.png" width="80px" alt="">
+        </a>
+        <span>ميكروشوب</span>
+    </div>
+  </header>
+
+  <div class="background">
+  <section class="slides">
+    <div class="content">
+        <h1>ادر عملائك بكل سهولة</h1>
+    </div>
+    <div class="top">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">Slide 1</div>
+         <div class="swiper-slide">Slide 2</div>
+         <div class="swiper-slide">Slide 3</div>
+         <div class="swiper-slide">Slide 4</div>
+         <div class="swiper-slide">Slide 5</div>
+       </div>
+       <div class="swiper-pagination"></div>
+     </div>
+    </section>
+</div>
+
+
+
+
+
+</div>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 1,
+     spaceBetween: 3,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     breakpoints: {
+      540: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+       },
+       952: {
+         slidesPerView: 3,
+         spaceBetween: 20,
+       },
+       1240: {
+         slidesPerView: 4,
+         spaceBetween: 20,
+       },
+     },
+   });
+ </script>
+  </div>
+
